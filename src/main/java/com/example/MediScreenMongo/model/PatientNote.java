@@ -34,4 +34,14 @@ public class PatientNote {
     public void setNote(String note) {
         this.note = note;
     }
+
+    @Override
+    public String toString() {
+        return "PatientNote{" +
+                "id='" + id + '\'' +
+                ", patId=" + patId +
+                ", note='" + note + '\'' +
+                '}';
+    }
+
 }
