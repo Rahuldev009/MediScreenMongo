@@ -1,9 +1,9 @@
 package com.example.MediScreenMongo.service;
 
+import com.example.MediScreenMongo.dto.PatientNoteDto;
 import com.example.MediScreenMongo.model.PatientNote;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface PatientNoteService {
 
@@ -17,4 +17,7 @@ public interface PatientNoteService {
 
     public List<PatientNote> getAllPatients();
 
+    public PatientNote getByPatId(int id);
+
+    List<PatientNoteDto> getAllByPatId(int id);
 }
