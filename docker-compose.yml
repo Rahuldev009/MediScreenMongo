@@ -1,0 +1,15 @@
+services:
+  notes:
+    image: notes
+    container_name: notes
+    ports:
+      - "8082:8082"
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+
+    environment:
+      MONGO_INITDB_DATABASE: Mediscreen
